@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal de Doação de Produtos - Empresas para ONGs</title>
+  <link rel="stylesheet" href = "Css/style.css" /> 
+</head>
+<body>
+  <h1>Portal de Doação de Produtos</h1>
+  <p>Empresas divulgam produtos para doação para ONGs.</p>
+
+  <main>
+    <section id="company-section">
+      <h2>Cadastro de Empresas e Produtos</h2>
+      <form id="product-form">
+        <label for="companyName">Nome da Empresa*</label>
+        <input type="text" id="companyName" required />
+
+        <label for="companyEmail">E-mail da Empresa*</label>
+        <input type="text" id="companyEmail" required />
+
+        <label for="productName">Nome do Produto*</label>
+        <input type="text" id="productName" required />
+
+        <label for="productDescription">Descrição do Produto</label>
+        <textarea id="productDescription"></textarea>
+
+        <label for="productQuantity">Quantidade*</label>
+        <input type="text" id="productQuantity" required pattern="\\d+" title="Informe um número válido" />
+
+        <button type="submit">Publicar Produto para Doação</button>
+        <p id="form-message" class="message"></p>
+      </form>
+    </section>
+
+    <section id="ongs-section">
+      <h2>Produtos Disponíveis para ONGs</h2>
+      <ul id="product-list" class="product-list">
+        <!-- Produtos aparecerão aqui -->
+      </ul>
+      <p id="loading-message">Carregando produtos...</p>
+    </section>
+  </main>
+
+  <div class="footer">© 2024 Portal de Doação - Empresas &amp; ONGs</div>
+
+  <script src = "js/script.js" ></script>
+</body>
+</html>
