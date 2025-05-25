@@ -11,6 +11,7 @@ const databaseUrl = process.env.DATABASE_URL;
 const allowedOrigins = [
     'http://localhost:8080',
     'http://localhost:5500',
+    'https://doacoesonline.netlify.app',
     'http://doacoesonline.netlify.app'
 ];
 
