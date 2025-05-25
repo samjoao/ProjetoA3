@@ -6,7 +6,7 @@ import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 3000;
-const databaseUrl = process.env.DATABASE_Url;
+const databaseUrl = process.env.DATABASE_URL;
 
 const allowedOrigins = [
     'http://localhost:8080',
