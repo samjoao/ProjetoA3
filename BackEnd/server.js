@@ -159,10 +159,10 @@ const Donation = mongoose.model('Donation', donationSchema);
                 return res.status(400).json({ message: 'Formato de e-mail inválido.'});
         }
              if (isNaN(Number(productQuantity)) || Number(productQuantity) < 1 ){
-                return res.status(400).json({ massage: 'Quantidade deve ser um número inteiro positivo.'});
+                return res.status(400).json({ message: 'Quantidade deve ser um número inteiro positivo.'});
         }
 
-        const newProduct = new product({
+        const newProduct = new Product({
             companyName,
             companyEmail,
             productName,
@@ -175,7 +175,7 @@ const Donation = mongoose.model('Donation', donationSchema);
     }   catch (error) {
         // Erros de validação do Mongoose ou outros erros
         if (error.name === 'Erro de Validação') {
-            const messages = Object.values(error.errors).map(val.massage);
+            const messages = Object.values(error.errors).map(val.message);
             return res.status(400).json({ message: messages.join(', ')});
         }
         console.error('Erro ao cadastrar produto:', error);
