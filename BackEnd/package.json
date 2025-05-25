@@ -19,5 +19,8 @@
     "mongoose": "^8.15.0",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
+  },
+    "engines": {
+    "node": "20.x"
   }
 }
