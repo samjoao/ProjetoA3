@@ -174,7 +174,7 @@ const Donation = mongoose.model('Donation', donationSchema);
         res.status(201).json({ message: 'Produto cadastrado com sucesso!', product: newProduct });
     }   catch (error) {
         // Erros de validação do Mongoose ou outros erros
-        if (error.name === 'Erro de Validação') {
+        if (error.name === 'ValidationError') {
             const messages = Object.values(error.errors).map(val.message);
             return res.status(400).json({ message: messages.join(', ')});
         }
