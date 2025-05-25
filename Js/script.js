@@ -1,6 +1,6 @@
 
     // URL do backend - para demo local assume localhost:3000
-    const API_BASE_URL = 'http://localhost:3000';
+    const API_BASE_URL = 'https://projetoa3-orzo.onrender.com';
 
     const productForm = document.getElementById('product-form');   
     const formMessage = document.getElementById('form-message');     
