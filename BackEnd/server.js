@@ -1,7 +1,7 @@
 import 'dotenv/config'; // carrega as variavede ambiente do .env
 
 import express from 'express';
-import { connect, Schema, model } from 'mongoose';
+import mongoose, { connect, Schema, model } from 'mongoose';
 import cors from 'cors';
 
 const app = express();
