@@ -1,0 +1,20 @@
+# Dependências do Node
+node_modules/
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Pastas de build / temporárias
+dist/
+build/
+.cache/
+
+# Arquivos de IDE (opcional, mas comum)
+.vscode/
+.idea/
+
+# Arquivos de sistema (opcional)
+.DS_Store
+Thumbs.db
