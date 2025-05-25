@@ -2,13 +2,13 @@
     // URL do backend - para demo local assume localhost:3000
     const API_BASE_URL = 'http://localhost:3000';
 
-    const productForm = document.getElementById('product-form');
-    const formMessage = document.getElementById('form-message');
-    const productList = document.getElementById('product-list');
+    const productForm = document.getElementById('product-form');   
+    const formMessage = document.getElementById('form-message');     
+    const productList = document.getElementById('product-list');    
     const loadingMessage = document.getElementById('loading-message');
 
-    // Função para validar email simples
-    function isValidEmail(email) {
+    // Função para validar email simples                                   
+    function isValidEmail(email) {                                         
       const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       return re.test(email);
     }
