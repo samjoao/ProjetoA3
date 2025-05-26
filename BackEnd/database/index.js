@@ -9,6 +9,12 @@ const sequelize = new Sequelize({
     logging: false, // Desabilita logs de SQL no console
 });
 
+// Removido duplicata da definição do modelo Company para evitar erro de redeclaração.
+
+// Modelo ONG (Adicione o campo 'password')
+// Removido duplicata da definição do modelo ONG para evitar erro de redeclaração.
+
+
 // ------------------------------------
 // 2. Definição dos Modelos (Substituindo Schemas Mongoose)
 // ------------------------------------
